@@ -1,0 +1,28 @@
+{
+  "name": "server_game_tic_tac_toe",
+  "version": "1.0.0",
+  "description": "this belongs to server of tic_tac_toe games made by : Thomas, Adhiawa, Raihan and Bayu",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TicTacToe-DynamicFox/server.git"
+  },
+  "keywords": [
+    "TicTacToe",
+    "socket.io",
+    "game"
+  ],
+  "author": "Thomas Martua PS, Adhiawa Alif Archiafinno, Raihan Ardianata, Bayu Aslama Z.A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TicTacToe-DynamicFox/server/issues"
+  },
+  "homepage": "https://github.com/TicTacToe-DynamicFox/server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
