@@ -4,7 +4,9 @@
   "description": "this belongs to server of tic_tac_toe games made by : Thomas, Adhiawa, Raihan and Bayu",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/TicTacToe-DynamicFox/server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   }
