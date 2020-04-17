@@ -7,6 +7,8 @@ const cors = require("cors")
 const PORT = process.env.PORT || 3000
 
 let rooms = 0
+let count1 = 0
+let count2 = 0
 app.use(cors())
 app.use(express.static('.'))
 
@@ -44,6 +46,17 @@ io.on('connection', (socket) => {
     socket.on('gameEnded', (data) => {
         socket.broadcast.to(data.room).emit('gameEnd', data)
     })
+
+    socket.on('count1', (data)=>{
+        count1 = data
+        io.emit('count1', count1)
+    })
+
+    socket.on('count2', (data)=>{
+        count2 = data
+        io.emit('count2', count2)
+    })
+
 
 })
 
